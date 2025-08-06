@@ -4,7 +4,7 @@ DESCRIPTION = "Qualcomm MSM Interface (QMI) Library"
 
 PR = "r13"
 SRC_DIR = "${WORKSPACE}/qmi"
-S = "${WORKDIR}/qmi"
+S = "${UNPACKDIR}/qmi"
 
 DEPENDS = "configdb diag dsutils libcutils"
 RDEPENDS:${PN} = "dsutils libcutils"

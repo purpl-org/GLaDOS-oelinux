@@ -6,8 +6,8 @@ LICENSE = "BSD-3-Clause"
 SRC_URI +="file://${BASEMACHINE}/find_partitions.sh"
 SRC_URI +="file://find_partitions.service"
 
-S = "${WORKDIR}/${BASEMACHINE}"
-UNPACKDIR = "${S}"
+S = "${UNPACKDIR}/${BASEMACHINE}"
+#UNPACKDIR = "${S}"
 
 PR = "r4"
 

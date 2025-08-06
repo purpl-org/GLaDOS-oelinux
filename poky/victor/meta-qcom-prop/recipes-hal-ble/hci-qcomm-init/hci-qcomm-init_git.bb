@@ -9,7 +9,7 @@ RDEPENDS:${PN} = "libcutils"
 FILESPATH =+ "${WORKSPACE}:"
 SRC_URI = "file://vendor/qcom/proprietary/bt/hci_qcomm_init/"
 SRC_DIR = "${WORKSPACE}/vendor/qcom/proprietary/bt/hci_qcomm_init/"
-S = "${WORKDIR}/vendor/qcom/proprietary/bt/hci_qcomm_init"
+S = "${UNPACKDIR}/vendor/qcom/proprietary/bt/hci_qcomm_init"
 
 BASEPRODUCT = "${@d.getVar('PRODUCT', False)}"
 

@@ -11,7 +11,7 @@ PR = "r1"
 FILESPATH =+ "${WORKSPACE}/system/core/:"
 SRC_URI   = "file://libion"
 
-S = "${WORKDIR}/libion"
+S = "${UNPACKDIR}/libion"
 DEPENDS += "virtual/kernel liblog"
 
 EXTRA_OECONF += " --disable-static"

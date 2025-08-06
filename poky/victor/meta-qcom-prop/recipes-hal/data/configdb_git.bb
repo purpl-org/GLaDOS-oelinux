@@ -17,7 +17,7 @@ EXTRA_OECONF += "PKG_CONFIG_PATH='${STAGING_LIBDIR}/pkgconfig'"
 
 EXTRA_OECONF += "LDFLAGS='-L${STAGING_LIBDIR} -Wl,-rpath-link,${STAGING_LIBDIR}'"
 
-S = "${WORKDIR}/data/configdb"
+S = "${UNPACKDIR}/data/configdb"
 SRC_DIR = "${WORKSPACE}/data/configdb"
 
 do_configure:prepend() {

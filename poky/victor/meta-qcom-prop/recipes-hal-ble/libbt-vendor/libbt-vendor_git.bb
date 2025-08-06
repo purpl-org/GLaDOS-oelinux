@@ -14,7 +14,7 @@ RDEPENDS_${PN} = "libcutils"
 FILESPATH =+ "${WORKSPACE}:"
 SRC_URI = "file://hardware/qcom/bt/libbt-vendor/"
 
-S = "${WORKDIR}/hardware/qcom/bt/libbt-vendor"
+S = "${UNPACKDIR}/hardware/qcom/bt/libbt-vendor"
 
 CFLAGS:append = " -DUSE_ANDROID_LOGGING -Wno-implicit-function-declaration -Wno-return-mismatch -fno-strict-aliasing -fno-tree-vectorize"
 LDFLAGS:append = " -llog "

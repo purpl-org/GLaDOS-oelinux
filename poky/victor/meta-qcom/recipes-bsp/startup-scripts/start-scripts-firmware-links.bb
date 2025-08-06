@@ -6,8 +6,8 @@ LICENSE = "BSD-3-Clause"
 SRC_URI +="file://${BASEMACHINE}/firmware-links.sh"
 SRC_URI +="file://firmware-links.service"
 
-S = "${WORKDIR}/${BASEMACHINE}"
-UNPACKDIR = "${S}"
+S = "${UNPACKDIR}/${BASEMACHINE}"
+#UNPACKDIR = "${S}"
 PR = "r5"
 
 inherit systemd

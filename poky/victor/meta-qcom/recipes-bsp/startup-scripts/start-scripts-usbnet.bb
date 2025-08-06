@@ -6,8 +6,8 @@ LICENSE = "BSD-3-Clause"
 
 SRC_URI ="file://usbnet"
 
-S = "${WORKDIR}/sources"
-UNPACKDIR = "${S}"
+S = "${UNPACKDIR}"
+#UNPACKDIR = "${S}"
 
 PR = "r7"
 

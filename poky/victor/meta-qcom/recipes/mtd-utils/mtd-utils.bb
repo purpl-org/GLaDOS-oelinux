@@ -15,7 +15,7 @@ PV = "2.0.0"
 FILESPATH =+ "${WORKSPACE}/filesystems:"
 SRC_URI = "file://mtd-utils"
 
-S = "${WORKDIR}/mtd-utils"
+S = "${UNPACKDIR}/mtd-utils"
 
 # xattr support creates an additional compile-time dependency on acl because
 # the sys/acl.h header is needed. libacl is not needed and thus enabling xattr

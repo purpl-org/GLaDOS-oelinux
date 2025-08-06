@@ -6,8 +6,8 @@ LICENSE = "BSD-3-Clause"
 SRC_URI +="file://${BASEMACHINE}/storage-mount.sh"
 SRC_URI +="file://storage-mount.service"
 
-S = "${WORKDIR}/${BASEMACHINE}"
-UNPACKDIR = "${S}"
+S = "${UNPACKDIR}/${BASEMACHINE}"
+#UNPACKDIR = "${S}"
 
 PR = "r5"
 

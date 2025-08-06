@@ -7,8 +7,8 @@ SRC_URI +="file://${BASEMACHINE}/trigger-recovery-updater.sh"
 SRC_URI +="file://${BASEMACHINE}/recovery-updater.sh"
 SRC_URI +="file://recovery_updater.service"
 
-S = "${WORKDIR}/${BASEMACHINE}"
-UNPACKDIR = "${S}"
+S = "${UNPACKDIR}/${BASEMACHINE}"
+#UNPACKDIR = "${S}"
 
 PR = "r4"
 

@@ -11,8 +11,8 @@ SRC_URI = "file://qcom-opensource/wlan/prima/firmware_bin \
            file://set_wcnss_mode"
 SRC_URI += "file://wcnss_wlan.service"
 
-S = "${WORKDIR}/qcom-opensource/wlan/firmware_bin"
-UNPACKDIR = "${S}"
+S = "${UNPACKDIR}/qcom-opensource/wlan/firmware_bin"
+#UNPACKDIR = "${S}"
 inherit systemd
 inherit update-rc.d
 

@@ -3,7 +3,7 @@ DESCRIPTION = "Time Services Daemon"
 PR = "r9"
 
 SRC_DIR = "${WORKSPACE}/time-services"
-S = "${WORKDIR}/time-services"
+S = "${UNPACKDIR}/time-services"
 
 DEPENDS += "virtual/kernel"
 DEPENDS += "glib-2.0"

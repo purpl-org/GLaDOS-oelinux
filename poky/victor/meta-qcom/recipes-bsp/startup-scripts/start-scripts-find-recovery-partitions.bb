@@ -5,8 +5,8 @@ LICENSE = "BSD-3-Clause"
 
 SRC_URI +="file://${BASEMACHINE}/find_recovery_partitions.sh"
 SRC_URI +="file://find-recovery-partitions.service"
-S = "${WORKDIR}/${BASEMACHINE}"
-UNPACKDIR = "${S}"
+S = "${UNPACKDIR}/${BASEMACHINE}"
+#UNPACKDIR = "${S}"
 PR = "r3"
 
 inherit update-rc.d
