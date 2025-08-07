@@ -26,10 +26,10 @@ do_configure:prepend() {
     # ALSO, libglib doesn't build with autotools anymore - it uses meson
     # so, i am making a .la for it
 
-    cp ${WORKSPACE}/poky/build/tmp-glibc/work/apq8009_robot-oe-linux-gnueabi/diag/git/diag/src/libdiag.la \
+    cp ${WORKSPACE}/poky/build/tmp-glibc/work/apq8009_robot-oe-linux-gnueabi/diag/git/sources/diag/src/libdiag.la \
         ${WORKSPACE}/poky/build/tmp-glibc/work/apq8009_robot-oe-linux-gnueabi/configdb/git/recipe-sysroot/usr/lib/
 
-    cp ${WORKSPACE}/poky/build/tmp-glibc/work/apq8009_robot-oe-linux-gnueabi/time-genoff/git/time-services/time-genoff/libtime_genoff.la \
+    cp ${WORKSPACE}/poky/build/tmp-glibc/work/apq8009_robot-oe-linux-gnueabi/time-genoff/git/sources/time-services/time-genoff/libtime_genoff.la \
         ${WORKSPACE}/poky/build/tmp-glibc/work/apq8009_robot-oe-linux-gnueabi/configdb/git/recipe-sysroot/usr/lib/
 
     mkdir -p ${STAGING_LIBDIR}

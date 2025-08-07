@@ -53,13 +53,13 @@ do_configure:prepend() {
     cp ${WORKSPACE}/poky/build/tmp-glibc/work/apq8009_robot-oe-linux-gnueabi/qmi/git/qmi/qmi_client_qmux/libqmi_client_qmux.la  ${STAGING_LIBDIR}/
 
     # diag
-    cp ${WORKSPACE}/poky/build/tmp-glibc/work/apq8009_robot-oe-linux-gnueabi/diag/git/diag/src/libdiag.la \
+    cp ${WORKSPACE}/poky/build/tmp-glibc/work/apq8009_robot-oe-linux-gnueabi/diag/git/sources/diag/src/libdiag.la \
         ${STAGING_LIBDIR}/
 
-    cp ${WORKSPACE}/poky/build/tmp-glibc/work/apq8009_robot-oe-linux-gnueabi/time-genoff/git/time-services/time-genoff/libtime_genoff.la \
+    cp ${WORKSPACE}/poky/build/tmp-glibc/work/apq8009_robot-oe-linux-gnueabi/time-genoff/git/sources/time-services/time-genoff/libtime_genoff.la \
         ${STAGING_LIBDIR}/
 
-    cp ${WORKSPACE}/poky/build/tmp-glibc/work/apq8009_robot-oe-linux-gnueabi/configdb/git/data/configdb/src/libconfigdb.la \
+    cp ${WORKSPACE}/poky/build/tmp-glibc/work/apq8009_robot-oe-linux-gnueabi/configdb/git/sources/data/configdb/src/libconfigdb.la \
         ${STAGING_LIBDIR}/
 
     if [ ! -f ${STAGING_LIBDIR}/libglib-2.0.la ]; then

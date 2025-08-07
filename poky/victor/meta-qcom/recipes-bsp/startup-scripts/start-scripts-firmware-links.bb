@@ -15,7 +15,7 @@ inherit systemd
 do_install() {
     if ${@bb.utils.contains('DISTRO_FEATURES', 'ro-rootfs', 'false', 'true', d)}; then
         if ${@bb.utils.contains('DISTRO_FEATURES', 'systemd', 'true', 'false', d)}; then
-           install -m 0755 ${S}/${BASEMACHINE}/firmware-links.sh -D ${D}${sysconfdir}/initscripts/firmware-links.sh
+           install -m 0755 ${S}/firmware-links.sh -D ${D}${sysconfdir}/initscripts/firmware-links.sh
            install -d ${D}${systemd_unitdir}/system/
            install -m 0644 ${S}/firmware-links.service -D ${D}${systemd_unitdir}/system/firmware-links.service
            install -d ${D}${systemd_unitdir}/system/sysinit.target.wants/
@@ -23,7 +23,7 @@ do_install() {
            ln -sf ${systemd_unitdir}/system/firmware-links.service \
                 ${D}${systemd_unitdir}/system/sysinit.target.wants/firmware-links.service
         else
-           install -m 0755 ${S}/${BASEMACHINE}/firmware-links.sh -D ${D}${sysconfdir}/init.d/firmware-links.sh
+           install -m 0755 ${S}/firmware-links.sh -D ${D}${sysconfdir}/init.d/firmware-links.sh
         fi
     fi
 }

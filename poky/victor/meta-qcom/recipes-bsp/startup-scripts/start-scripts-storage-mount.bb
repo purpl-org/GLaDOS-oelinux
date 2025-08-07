@@ -18,7 +18,7 @@ INITSCRIPT_PARAMS = "start 37 S ."
 
 do_install() {
     if ${@bb.utils.contains('DISTRO_FEATURES', 'systemd', 'true', 'false', d)}; then
-       install -m 0755 ${S}/${BASEMACHINE}/storage-mount.sh -D ${D}${sysconfdir}/initscripts/storage-mount.sh
+       install -m 0755 ${S}/storage-mount.sh -D ${D}${sysconfdir}/initscripts/storage-mount.sh
        install -d ${D}${systemd_unitdir}/system/
        install -m 0644 ${S}/storage-mount.service -D ${D}${systemd_unitdir}/system/storage-mount.service
        install -d ${D}${systemd_unitdir}/system/local-fs.target.requires/
@@ -26,7 +26,7 @@ do_install() {
        ln -sf ${systemd_unitdir}/system/storage-mount.service \
             ${D}${systemd_unitdir}/system/local-fs.target.requires/storage-mount.service
     else
-       install -m 0755 ${S}/${BASEMACHINE}/storage-mount.sh -D ${D}${sysconfdir}/init.d/storage-mount.sh
+       install -m 0755 ${S}/storage-mount.sh -D ${D}${sysconfdir}/init.d/storage-mount.sh
     fi
 }
 

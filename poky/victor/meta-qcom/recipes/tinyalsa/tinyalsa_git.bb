@@ -28,6 +28,6 @@ SRC_URI:append_sdxprairie = "file://0001-tinymix_multi.patch \
 S = "${UNPACKDIR}"
 #UNPACKDIR = "${S}"
 
-EXTRA_OEMAKE = "DEFAULT_INCLUDES=-I${UNPACKDIR}/git/include/"
+EXTRA_OEMAKE = "DEFAULT_INCLUDES=-I${UNPACKDIR}/tinyalsa-git/include/"
 
 DEPENDS = "libcutils"

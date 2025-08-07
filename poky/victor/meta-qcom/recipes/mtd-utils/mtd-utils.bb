@@ -61,16 +61,16 @@ do_install () {
 	oe_runmake install DESTDIR=${D} SBINDIR=${sbindir} MANDIR=${mandir} INCLUDEDIR=${includedir}
 
 	mkdir -p ${MTD_TEST_BIN_PATH}/fstests/
-	find ${S}/../build/tests/fs-tests/ -executable -type f -exec cp {} ${MTD_TEST_BIN_PATH}/fstests/ \;
+	find ${S}/../../build/tests/fs-tests/ -executable -type f -exec cp {} ${MTD_TEST_BIN_PATH}/fstests/ \;
 
 	mkdir -p ${MTD_TEST_BIN_PATH}/ubi-tests/
 	for test in ${ubi_tests}; do
-		cp ${S}/../build/$test ${MTD_TEST_BIN_PATH}/ubi-tests/
+		cp ${S}/../../build/$test ${MTD_TEST_BIN_PATH}/ubi-tests/
 	done
 
 	mkdir -p ${MTD_TEST_BIN_PATH}/checkfs/
 	for test in ${checkfs_tests}; do
-		cp ${S}/../build/$test ${MTD_TEST_BIN_PATH}/checkfs/
+		cp ${S}/../../build/$test ${MTD_TEST_BIN_PATH}/checkfs/
 	done
 }
 

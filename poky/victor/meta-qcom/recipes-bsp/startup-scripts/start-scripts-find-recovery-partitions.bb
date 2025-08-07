@@ -16,7 +16,7 @@ INITSCRIPT_PARAMS = "start 38 S ."
 INITSCRIPT_PARAMS_mdm = "start 38 S ."
 
 do_install() {
-    install -m 0755 ${S}/${BASEMACHINE}/find_recovery_partitions.sh -D ${D}${sysconfdir}/init.d/find_recovery_partitions.sh
+    install -m 0755 ${S}/find_recovery_partitions.sh -D ${D}${sysconfdir}/init.d/find_recovery_partitions.sh
     if ${@bb.utils.contains('DISTRO_FEATURES', 'systemd', 'true', 'false', d)}; then
               install -d ${D}${systemd_unitdir}/system/
        install -m 0644 ${S}/find-recovery-partitions.service -D ${D}${systemd_unitdir}/system/find-recovery-partitions.service
