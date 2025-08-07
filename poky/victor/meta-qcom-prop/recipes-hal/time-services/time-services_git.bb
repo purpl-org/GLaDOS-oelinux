@@ -22,7 +22,7 @@ SRC_URI +="file://time_serviced.service"
 CFLAGS += "-lpthread"
 do_install:append () {
     if ${@bb.utils.contains('DISTRO_FEATURES', 'systemd', 'true', 'false', d)}; then
-     install -m 0755 ${WORKDIR}/time-services/time_serviced -D ${D}${sysconfdir}/initscripts/time_serviced
+     install -m 0755 ${UNPACKDIR}/time-services/time_serviced -D ${D}${sysconfdir}/initscripts/time_serviced
      install -d ${D}/etc/systemd/system/
      install -m 0644 ${UNPACKDIR}/time_serviced.service -D ${D}/etc/systemd/system/time_serviced.service
      install -d ${D}/etc/systemd/system/multi-user.target.wants/

@@ -40,17 +40,17 @@ do_configure:prepend() {
     # wire - this is really really bad
 
     # btnv
-    cp ${WORKSPACE}/poky/build/tmp-glibc/work/apq8009_robot-oe-linux-gnueabi/hci-qcomm-init/git/vendor/qcom/proprietary/bt/hci_qcomm_init/libbtnv.la ${STAGING_LIBDIR}/
+    cp ${WORKSPACE}/poky/build/tmp-glibc/work/apq8009_robot-oe-linux-gnueabi/hci-qcomm-init/git/sources/vendor/qcom/proprietary/bt/hci_qcomm_init/libbtnv.la ${STAGING_LIBDIR}/
 
     # qmi
-    cp ${WORKSPACE}/poky/build/tmp-glibc/work/apq8009_robot-oe-linux-gnueabi/qmi/git/qmi/services/libqmiservices.la \
+    cp ${WORKSPACE}/poky/build/tmp-glibc/work/apq8009_robot-oe-linux-gnueabi/qmi/git/sources/qmi/services/libqmiservices.la \
         ${STAGING_LIBDIR}/
-    cp ${WORKSPACE}/poky/build/tmp-glibc/work/apq8009_robot-oe-linux-gnueabi/qmi/git/qmi/src/libqmi.la \
+    cp ${WORKSPACE}/poky/build/tmp-glibc/work/apq8009_robot-oe-linux-gnueabi/qmi/git/sources/qmi/src/libqmi.la \
         ${STAGING_LIBDIR}/
-    cp ${WORKSPACE}/poky/build/tmp-glibc/work/apq8009_robot-oe-linux-gnueabi/qmi-framework/git/qmi-framework/qcci/src/libqmi_cci.la  ${STAGING_LIBDIR}/
-    cp ${WORKSPACE}/poky/build/tmp-glibc/work/apq8009_robot-oe-linux-gnueabi/qmi-framework/git/qmi-framework/common/src/libqmi_common_so.la  ${STAGING_LIBDIR}/
-    cp ${WORKSPACE}/poky/build/tmp-glibc/work/apq8009_robot-oe-linux-gnueabi/qmi-framework/git/qmi-framework/qcsi/src/libqmi_csi.la  ${STAGING_LIBDIR}/
-    cp ${WORKSPACE}/poky/build/tmp-glibc/work/apq8009_robot-oe-linux-gnueabi/qmi/git/qmi/qmi_client_qmux/libqmi_client_qmux.la  ${STAGING_LIBDIR}/
+    cp ${WORKSPACE}/poky/build/tmp-glibc/work/apq8009_robot-oe-linux-gnueabi/qmi-framework/git/sources/qmi-framework/qcci/src/libqmi_cci.la  ${STAGING_LIBDIR}/
+    cp ${WORKSPACE}/poky/build/tmp-glibc/work/apq8009_robot-oe-linux-gnueabi/qmi-framework/git/sources/qmi-framework/common/src/libqmi_common_so.la  ${STAGING_LIBDIR}/
+    cp ${WORKSPACE}/poky/build/tmp-glibc/work/apq8009_robot-oe-linux-gnueabi/qmi-framework/git/sources/qmi-framework/qcsi/src/libqmi_csi.la  ${STAGING_LIBDIR}/
+    cp ${WORKSPACE}/poky/build/tmp-glibc/work/apq8009_robot-oe-linux-gnueabi/qmi/git/sources/qmi/qmi_client_qmux/libqmi_client_qmux.la  ${STAGING_LIBDIR}/
 
     # diag
     cp ${WORKSPACE}/poky/build/tmp-glibc/work/apq8009_robot-oe-linux-gnueabi/diag/git/sources/diag/src/libdiag.la \
