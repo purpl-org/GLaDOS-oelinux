@@ -19,8 +19,8 @@ FILESPATH =+ "${WORKSPACE}:"
 
 S = "${UNPACKDIR}/wlan/host"
 
-ATH_BUILD_TYPE="mdm9x15"
-ATH_BUS_TYPE="SDIO"
+ATH_BUILD_TYPE = "mdm9x15"
+ATH_BUS_TYPE = "SDIO"
 
 EXTRA_OEMAKE = "\
     ATH_LINUXPATH=${STAGING_DIR_HOST}${base_libdir}/modules/${KERNEL_VERSION}/build \

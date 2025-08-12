@@ -18,7 +18,7 @@ LDFLAGS += "-Wl,--allow-multiple-definition"
 INITSCRIPT_NAME = "time_serviced"
 INITSCRIPT_PARAMS = "start 29 2 3 4 5 . stop 1 0 1 6 ."
 
-SRC_URI +="file://time_serviced.service"
+SRC_URI += "file://time_serviced.service"
 CFLAGS += "-lpthread"
 do_install:append () {
     if ${@bb.utils.contains('DISTRO_FEATURES', 'systemd', 'true', 'false', d)}; then

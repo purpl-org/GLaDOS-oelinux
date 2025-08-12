@@ -3,8 +3,8 @@ HOMEPAGE = "http://codeaurora.org"
 LIC_FILES_CHKSUM = "file://${COREBASE}/meta/files/common-licenses/BSD-3-Clause;md5=550794465ba0ec5312d6919e203a55f9"
 LICENSE = "BSD-3-Clause"
 
-SRC_URI +="file://${BASEMACHINE}/storage-mount.sh"
-SRC_URI +="file://storage-mount.service"
+SRC_URI += "file://${BASEMACHINE}/storage-mount.sh"
+SRC_URI += "file://storage-mount.service"
 
 S = "${UNPACKDIR}/${BASEMACHINE}"
 #UNPACKDIR = "${S}"

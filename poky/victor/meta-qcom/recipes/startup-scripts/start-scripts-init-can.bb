@@ -4,7 +4,7 @@ LIC_FILES_CHKSUM = "file://${COREBASE}/meta/files/common-licenses/BSD-3-Clause;m
 LICENSE = "BSD-3-Clause"
 inherit update-rc.d
 
-SRC_URI +="file://init-can.sh"
+SRC_URI += "file://init-can.sh"
 #S = "${UNPACKDIR}"
 S = "${UNPACKDIR}"
 #UNPACKDIR = "${S}"
