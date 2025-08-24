@@ -18,6 +18,5 @@ DIRPATH="$(pwd)"
 docker run -it --rm \
     -v $(pwd)/anki-deps:${HOME}/.anki \
     -v $(pwd):$(pwd) \
-    -v /home/kerigan/projects:/home/kerigan/projects \
     -v $(pwd)/build/cache:${HOME}/.ccache \
     vic-yocto-builder-7 bash
