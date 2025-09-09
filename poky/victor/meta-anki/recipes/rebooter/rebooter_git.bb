@@ -18,7 +18,7 @@ do_compile() {
 do_install() {
    mkdir -p ${D}/usr/sbin
    cp ${S}/rebooter.py ${D}/usr/sbin/
-   chmod 0755 ${D}/usr/sbin/rebooter.py
+   chmod 0755 ${D}/usr/sbin/rebooter.sh
    if ${@bb.utils.contains('DISTRO_FEATURES', 'systemd', 'true', 'false', d)}; then
       install -d ${SYSTEM_DIR}/
       install -d ${SYSTEM_DIR}/multi-user.target.wants/
